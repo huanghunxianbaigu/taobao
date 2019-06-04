@@ -1,0 +1,270 @@
+.main {
+  width: 1190px;
+  margin: 0 auto;
+}
+.main .header {
+  position: relative;
+  height: 43px;
+  padding: 20px 0;
+}
+.main .header h1 {
+  display: inline-block;
+  width: 106px;
+  height: 43px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.main .header h1 img {
+  width: 106px;
+}
+.main .header h2 {
+  display: inline-block;
+  height: 43px;
+  line-height: 43px;
+  margin-left: 6px;
+  font-size: 22px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1", "\9ED1\4F53", arial;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.main .steps {
+  height: 46px;
+  border-bottom: 2px solid #e6e6e6;
+  position: relative;
+}
+.main .steps ul {
+  width: 720px;
+  margin: 0 auto;
+}
+.main .steps ul li {
+  width: 150px;
+  display: inline;
+  float: left;
+  padding-left: 30px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #999;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1", "\9ED1\4F53", arial;
+}
+.main .steps ul li i {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFF;
+  background: url(../img/register/hui.png) no-repeat 0 0;
+}
+.main .steps ul .active {
+  color: #3e3e3e;
+  border-bottom: 2px solid #ff4700;
+}
+.main .steps ul .active i {
+  background: url(../img/register/hong.png) no-repeat 0 0;
+}
+.main .steps .switcher {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 12px;
+}
+.main .steps .switcher a {
+  padding: 3px 5px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #FFF;
+}
+.main .steps .switcher a:hover {
+  color: #ff5b20;
+  text-decoration: underline;
+}
+.main .content {
+  padding: 50px 0;
+}
+.main .content .form-list {
+  width: 720px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.main .content .form-list .form-group {
+  padding: 10px 0;
+}
+.main .content .form-list .form-group .form-item {
+  padding: 10px 0 10px 260px;
+  line-height: 36px;
+  position: relative;
+}
+.main .content .form-list .form-group .form-item span {
+  position: absolute;
+  width: 400px;
+  height: 20px;
+  line-height: 36px;
+  left: 600px;
+}
+.main .content .form-list .form-group .form-item input {
+  width: 300px;
+  border: 1px solid #dedede;
+  height: 17px;
+  line-height: 17px;
+  padding: 9px;
+  font-size: 14px;
+}
+.main .content .form-list .form-group .form-item label {
+  display: inline;
+  float: left;
+  margin-left: -260px;
+  width: 240px;
+  height: 37px;
+  line-height: 37px;
+  text-align: right;
+}
+.main .content .form-list .form-group .form-item .submit {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background: #ff4001;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  min-width: 200px;
+}
+.main .content .form-list .form-group .form-item .hide {
+  background-color: #ededed;
+  border-color: #ededed;
+  color: #999;
+  cursor: default;
+}
+.main .content .form-list .form-group .form-item .hide:hover {
+  background-color: #ededed;
+  color: #FFF;
+  text-decoration: none;
+}
+.main .content .form-list .form-group .form-item a {
+  color: #ff5b20;
+  text-decoration: none;
+}
+.main .content .form-list .form-group .form-item a:hover {
+  text-decoration: underline;
+}
+.main .content .form-list .form-group .f12 {
+  font-size: 12px!important;
+}
+.main .content2 {
+  width: 1190px;
+  height: 366px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top: 167px;
+}
+.main .content2 p {
+  padding: 50px;
+  text-indent: 30px;
+  font-size: 17px;
+}
+.main .content2 p span {
+  color: #f40;
+  font-size: 25px;
+}
+.main .content2 p a {
+  color: #f40;
+  font-size: 14px;
+}
+.suggest {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: right;
+}
+.suggest img {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+.suggest a {
+  color: #ff5b20;
+  text-decoration: none;
+}
+.suggest a:hover {
+  text-decoration: underline;
+}
+.footer {
+  position: relative;
+  margin: 0 auto;
+  padding: 7px 0 9px;
+  border-top: 1px solid #ddd;
+  width: 1200px;
+}
+.footer .footer-hd p {
+  margin-bottom: 8px;
+  line-height: 27px;
+  border-bottom: 1px solid #ddd;
+}
+.footer .footer-hd p a {
+  display: inline;
+  float: left;
+  margin: 0 4px;
+  white-space: nowrap;
+  color: #6c6c6c;
+}
+.footer .footer-hd p b {
+  display: inline;
+  float: left;
+  margin: 0 3px;
+  font-weight: 400;
+  color: #ddd;
+}
+.footer .footer-bd p {
+  padding-bottom: 8px;
+  overflow: hidden;
+}
+.footer .footer-bd p a {
+  display: inline;
+  float: left;
+  margin: 0 4px;
+  white-space: nowrap;
+  color: #6c6c6c;
+}
+.footer .footer-bd p em {
+  display: inline;
+  float: left;
+  white-space: nowrap;
+  color: #9c9c9c;
+}
+.footer .footer-bd p:nth-last-child(1) span {
+  display: inline;
+  float: left;
+  white-space: nowrap;
+  color: #9c9c9c;
+}
+.footer .footer-bd p:nth-last-child(1) span a {
+  display: inline;
+  margin: 0 4px;
+  white-space: nowrap;
+  color: #6c6c6c;
+}
+.footer .footer-bd p:nth-last-child(1) b {
+  float: left;
+  margin: 0 4px;
+  color: #9c9c9c;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}

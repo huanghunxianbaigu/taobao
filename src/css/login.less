@@ -1,0 +1,361 @@
+// 重置样式
+body{
+    color: #404040;
+    background: #fff;
+    font: 12px/1.5 "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+// page
+#page{
+   .header{
+        padding: 22px 0;
+        .logo{
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+            h1{
+                float: left;
+                width: 110px;
+                height: 44px;
+                img{
+                    width: 110px;
+                }
+            }
+            .login-msg1{
+                text-align: center;
+                width: 880px;
+                margin: 0 auto;
+                background-color: #fef2f2;
+                color: #6C6C6C;
+                line-height: 16px;
+                padding: 6px 10px;
+                overflow: hidden;
+                border: 1px solid #ffb4a8;;
+                &>p{
+                    white-space: normal;
+                    word-wrap: break-word;
+                }
+            }
+            &>a{
+                float: right;
+                line-height: 44px;
+                color: #666;
+                font-size: 12px;
+                text-decoration: none;
+                i{
+                    font-size: 16px;
+                    color: #f40;
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            position: relative;
+            .login-newbg{
+                background: url(../img/register/page-bg.jpg);
+                position: absolute;
+                z-index: 9;
+                top: 0;
+                left: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 100%;
+                height: 600px;
+            }
+            .login-adlink{
+                width: 1200px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1000;
+                &>a{
+                    position: absolute;
+                    width: 630px;
+                    height: 440px;
+                    left: 80px;
+                    top: 80px;
+                }
+            }
+            .content-layouy{
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+                position: relative;
+                height: 600px;
+                z-index: 999;
+                .login-box-wrap{
+                    position: absolute;
+                    top: 120px;
+                    right: 60px;
+                    width: 350px;
+                    .login-box{
+                        background-color: rgba(255,255,255,.9);    width: 300px;
+                        padding: 25px 25px 23px;
+                        color: #6c6c6c;
+                        position: relative;
+                        margin: 0 auto;
+                        .login-box-hd{
+                            .login-switch{
+                                width: 52px;
+                                height: 52px;
+                                line-height: 52px;
+                                position: absolute;
+                                right: 5px;
+                                top: 8px;
+                                img{
+                                    width: 52px;
+                                    height: 52px;
+                                    cursor: pointer;
+                                }
+                                &>.show{
+                                    display: block
+                                }
+                                &>.hide{
+                                    display: none
+                                }
+                                
+                            }
+                            .login-tip{
+                                position: absolute;
+                                top: 5px;
+                                right: 58px;
+                                .poptip{
+                                    border: 1px solid #f3d995;
+                                    height: 16px;
+                                    line-height: 16px;
+                                    padding: 5px 20px 5px 15px;
+                                    background: #fefcee;
+                                    position: relative;
+                                    .poptip-arrow{
+                                        top: 8px;
+                                        right: 0;
+                                        position: absolute;
+                                        z-index: 10;
+                                        em{
+                                            border-color: rgba(255,255,255,0);
+                                            top: 0;
+                                            left: 1px;
+                                            border-left-color: #f3d995;
+                                            border-width: 6px 0 6px 6px;
+                                            border-style: solid;
+                                            overflow: hidden;
+                                            width: 0;
+                                            height: 0;
+                                            position: absolute;
+                                        }
+                                        span{
+                                            border-color: rgba(255,255,255,0);
+                                            border-left-color: #fefcee;
+                                            border-width: 6px 0 6px 6px;
+                                            border-style: solid;
+                                            overflow: hidden;
+                                            width: 0;
+                                            height: 0;
+                                            position: absolute;
+                                        }
+                                    }
+                                    .poptip-content{
+                                        color: #df9c1f;
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        i{
+                                            color: #df9c1f;
+                                            font-size: 14px;
+                                            margin-right: 8px;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        .login-box-bd{
+                            .log-in{
+                                position: relative;
+                                .log-title{
+                                    height: 18px;
+                                    line-height: 18px;
+                                    font-size: 16px;
+                                    color: #3c3c3c;
+                                    margin-top: 9px;
+                                    padding-bottom: 8px;
+                                    font-weight: 700;
+                                }
+                                
+                                    .field{
+                                        margin-top: 20px;
+                                        position: relative;
+                                        label{
+                                            display: block;
+                                            width: 40px;
+                                            height: 40px;
+                                            line-height: 40px;
+                                            color: #fff;
+                                            background: #ddd;
+                                            text-align: center;
+                                            position: absolute;
+                                            left: 1px;
+                                            top: 1px;
+                                            outline: 0;
+                                        }
+                                        input{
+                                            width: 240px;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            height: 18px;
+                                            padding: 11px 8px 11px 50px;
+                                            border: 1px solid #ddd;
+                                        }
+                                    }
+                                    .submit{
+                                        margin-top: 20px;
+                                        #submit{
+                                            width: 300px;
+                                            height: 42px;
+                                            border: 0;
+                                            display: inline-block;
+                                            overflow: hidden;
+                                            vertical-align: middle;
+                                            line-height: 42px;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            color: #fff;
+                                            background: #f40;
+                                            border-radius: 3px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    ul{
+                                        li{
+                                            margin-top: 24px;
+                                            line-height: 14px;
+                                            a{
+                                                display: inline-block;
+                                                margin-right: 20px;
+                                                color: #6c6c6c;
+                                                i{
+                                                    font-size: 16px;
+                                                    margin-right: 3px;
+                                                }
+                                                .wb{
+                                                    color: #e52425;
+                                                }
+                                                .zfb{
+                                                    color: #1ba9ee;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .login-links{
+                                        margin-top: 25px;
+                                        overflow: hidden;
+                                        text-align: right;
+                                        a{
+                                            margin-right: 10px;
+                                            color: #6c6c6c;
+                                        }
+                                    }
+                                    .login-msg{
+                                        border: 1px solid;
+                                        border-color: #ffb4a8;
+                                        background-color: #fef2f2;
+                                        color: #6C6C6C;
+                                        display: none;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        line-height: 16px;
+                                        padding: 6px 10px;
+                                        overflow: hidden;
+                                        width: 278px;
+                                        background: #fef2f2;
+                                        
+                                        i{
+                                            padding-right: 10px;
+                                            float: left;
+                                            font-size: 16px;
+                                            color: #f40;
+                                        }
+                                        span{
+                                            float: left;
+                                            white-space: normal;
+                                            word-wrap: break-word;
+                                            width: 240px;
+                                        }
+                                    }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   }
+}
+// footer
+.footer{
+    position: relative;
+    margin: 60px auto 0;
+    padding: 7px 0 9px;
+    border-top: 1px solid #ddd;
+    width: 1200px;
+    .footer-hd{
+        p{
+            margin-bottom: 8px;
+            line-height: 27px;
+            border-bottom: 1px solid #ddd;
+            a{
+                display: inline;
+                float: left;
+                margin: 0 4px;
+                white-space: nowrap;
+                color: #6c6c6c;
+            }
+            b{
+                display: inline;
+                float: left;
+                margin: 0 3px;
+                font-weight: 400;
+                color: #ddd;
+            }
+        }
+    }
+    .footer-bd{
+        p{
+            padding-bottom: 8px;
+            overflow: hidden;
+            a{
+                display: inline;
+                float: left;
+                margin: 0 4px;
+                white-space: nowrap;
+                color: #6c6c6c;
+            }
+            em{
+                display: inline;
+                float: left;
+                white-space: nowrap;
+                color: #9c9c9c;
+            } 
+         }
+         p:nth-last-child(1){
+            span{
+                display: inline;
+                float: left;
+                margin: 0 4px;
+                white-space: nowrap;
+                color: #9c9c9c;
+                a{
+                    display: inline;
+                    float: left;
+                    margin: 0 4px;
+                    white-space: nowrap;
+                    color: #6c6c6c;
+                }
+            }
+            b{
+               float: left;
+               margin: 0 4px;
+               color: #9c9c9c;
+           }
+         }
+     }
+}

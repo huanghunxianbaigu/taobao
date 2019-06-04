@@ -1,0 +1,500 @@
+/* 地址导航 */
+
+body {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+    background: #fff;
+}
+
+.site-nav {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #eee;
+    background-color: #f5f5f5;
+}
+
+.site-nav .container {
+    width: 1190px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+
+/* 地址导航左右UL公用 */
+
+.site-nav-left,
+.site-nav-right {
+    height: 35px;
+    line-height: 35px;
+}
+
+
+/* 地址导航左UL */
+
+.site-nav-left {
+    float: left;
+}
+
+
+/* 地址导航右UL */
+
+.site-nav-right {
+    float: right;
+}
+
+
+/* 地址导航 （公用） */
+
+.site-nav-left>li,
+.site-nav-right>li {
+    float: left;
+    padding: 0 6px;
+}
+
+.site-nav-left>li>a,
+.site-nav-right>li>a {
+    color: #6c6c6c;
+    font-size: 12px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+.site-nav-left>li>a:hover,
+.site-nav-right>li>a:hover {
+    color: #F40
+}
+
+.site-nav b {
+    display: block;
+    float: left;
+    width: 12px;
+    height: 6px;
+    line-height: 6px;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.site-nav b i {
+    display: block;
+    margin-top: -3px;
+    margin-right: 20px;
+    color: #9c9c9c;
+}
+
+
+/* 地址导航 左UL LI */
+
+.site-nav-left li:nth-child(1) {
+    position: relative;
+}
+
+.site-nav-left li:nth-child(1) span {
+    margin-right: 7px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    color: #6c6c6c;
+}
+
+
+/* 地址导航 右UL LI */
+
+.goods-category>a {
+    margin: 0;
+}
+
+.site-nav-right {
+    box-sizing: border-box;
+}
+
+.site-nav-right strong {
+    float: left;
+    cursor: pointer;
+    width: 12px;
+    margin-right: 5px;
+}
+
+
+/* 购物车 网站导航iconfont 颜色 */
+
+.shopping-cart>a>strong,
+.site-map>a>strong {
+    color: #f40;
+}
+
+
+/* 分割线 */
+
+.pipe span {
+    padding: 0 5px;
+    font-style: normal;
+    color: #ddd;
+}
+
+
+/* 二级导航公用效果 */
+
+
+/* 相对定位 */
+
+.favorite,
+.my-taobao,
+.seller-hub,
+.customer {
+    position: relative;
+}
+
+
+/* 悬停效果 */
+
+.my-taobao:hover,
+.favorite:hover,
+.seller-hub:hover,
+.customer:hover,
+.site-map:hover {
+    background: #FFF;
+}
+
+
+/* 悬停二级导航出现 */
+
+.my-taobao:hover .my-taobao-er,
+.favorite:hover .favorite-er,
+.seller-hub:hover .seller-hub-er,
+.customer:hover .customer-er,
+.site-map:hover .site-map-er {
+    display: block;
+}
+
+
+/* 二级导航 */
+
+.my-taobao-er,
+.favorite-er,
+.seller-hub-er,
+.customer-er,
+.site-map-er {
+    position: absolute;
+    left: -1px;
+    top: 34px;
+    padding: 8px 0;
+    line-height: normal;
+    border: 1px solid #EEE;
+    border-top: none;
+    background: #FFF;
+    display: none;
+    z-index: 10000000000;
+}
+
+
+/* 二级导航a标签 */
+
+.my-taobao-er>a,
+.favorite-er>a,
+.seller-hub-er>a,
+.customer-er>a {
+    display: block;
+    padding: 0 5px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #6C6C6C;
+    text-decoration: none;
+}
+
+
+/* 二级导航a悬停效果 */
+
+.my-taobao-er>a:hover,
+.favorite-er>a:hover,
+.seller-hub-er>a:hover,
+.customer-er>a:hover {
+    background: #F5F5F5;
+}
+
+
+/* 网站导航二级导航 */
+
+.site-map-er {
+    box-sizing: border-box;
+    right: 0px;
+    left: 0px;
+    z-index: 1000000000;
+}
+
+
+/* 二级导航分区 */
+
+.site-map-er .col-md-3 {
+    padding: 5px;
+    border-right: 1px solid #eee;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+}
+
+.site-map-er div:nth-child(4) {
+    border-right: none;
+}
+
+.site-map-er ul li {
+    box-sizing: border-box;
+}
+
+
+/* 网站导航二级导航分区公用部分 */
+
+.motif h4,
+.feature h4,
+.app h4,
+.recommend h4 {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.site-map-er ul li {
+    float: left;
+    padding-top: 5px;
+    width: 30%;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* 网站导航a标签 */
+
+.site-map-er ul a {
+    position: relative;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 2px;
+    padding: 0 8px;
+    border-radius: 2px;
+    color: #3c3c3c;
+    display: block;
+}
+
+
+/* 网站导航a悬停效果 */
+
+.site-map-er ul a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* 小图标 */
+
+.site-map-er i {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    display: block;
+    width: 9px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.site-map-er .hot {
+    background: url(../img/hot.gif) no-repeat;
+}
+
+.site-map-er .new {
+    background: url(../img/new.gif) no-repeat;
+}
+
+
+/* 主体市场UL */
+
+.motif ul li {
+    width: 24%;
+    float: left;
+}
+
+.motif h4 {
+    color: #fc4200;
+}
+
+.motif a:hover {
+    background: #fc4200;
+}
+
+
+/* 特色市场 */
+
+.feature ul li {
+    width: 33%;
+    float: left;
+}
+
+.feature h4 {
+    color: #9fb838;
+}
+
+.feature a:hover {
+    background-color: #9fb838;
+}
+
+
+/* 阿里APP */
+
+.app ul li {
+    width: 33%;
+    float: left;
+}
+
+.app h4 {
+    color: #d75696;
+}
+
+.app a:hover {
+    background-color: #d75696;
+}
+
+
+/* 精彩推荐集 */
+
+.recommend ul li {
+    width: 49%;
+    float: left;
+}
+
+.recommend h4 {
+    color: #2e9fdb;
+}
+
+.recommend a:hover {
+    background-color: #2e9fdb;
+}
+
+
+/* top-wrap */
+
+.top-wrap {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 7px 0;
+    background: #FFF;
+    display: none;
+}
+
+.fix {
+    display: block;
+}
+
+.top-wrap-logo {
+    float: left;
+    height: 33px;
+    width: 100px;
+    margin-top: 0;
+}
+
+.top-wrap-logo a {
+    display: block;
+    padding-top: 33px;
+    width: 80px;
+    background: url(../img/logo.png) 0 0 no-repeat;
+    background-size: 80px;
+}
+
+.top-wrap-search {
+    margin-left: 258px;
+    margin-right: 302px;
+    position: relative;
+}
+
+.top-wrap-search .search-header {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 0;
+    height: 40px;
+    overflow: hidden;
+    background: #f4f4f4;
+    width: 74px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 200;
+}
+
+.top-wrap-search::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    content: '';
+    height: 36px;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 1000;
+}
+
+.top-wrap-search .search-header li {
+    color: #3C3C3C;
+    font-weight: 400;
+    background-image: none;
+    filter: none;
+    border-top-right-radius: 0;
+    line-height: 38px;
+    height: 38px;
+    float: none;
+    width: 74px;
+    background-color: #f4f4f4!important;
+    text-align: center;
+    margin-right: 4px;
+}
+
+.top-wrap-search .search-header i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 6px;
+    height: 3px;
+}
+
+.search-bot {
+    position: relative;
+}
+
+.search-bot>form>button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 74px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    background-repeat: repeat-x;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #FF4200;
+    cursor: pointer;
+    border: none;
+}
+
+.search-bot form .search-comobox i {
+    position: absolute;
+    left: 84px;
+    z-index: 2;
+    font-size: 16px;
+    top: 9px;
+    color: #666;
+}

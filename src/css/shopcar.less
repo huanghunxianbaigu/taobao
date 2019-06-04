@@ -1,0 +1,755 @@
+ //header
+ header{
+     .content{
+        width: 1190px;
+        margin: 0 auto; 
+        position: relative;
+        .header{
+            position: relative;
+            height: 43px;
+            padding: 20px 0;
+            h1{
+                display: inline-block;
+                width: 106px;
+                height: 43px;
+                overflow: hidden;
+                vertical-align: middle;
+                img{
+                    width: 106px;
+                }
+            }
+            h2{
+                display: inline-block;
+                height: 43px;
+                line-height: 43px;
+                margin-left: 6px;
+                font-size: 22px;
+                font-family: "\5FAE\8F6F\96C5\9ED1","\534E\6587\7EC6\9ED1","\9ED1\4F53",arial;
+                font-weight: 600;
+                vertical-align: middle;
+            }
+        }
+        .search{
+            float: right;
+            width: 515px;
+            position: absolute;
+            right: 0;
+            top: 27px;
+            .search-triggers{
+                position: relative;
+                z-index: 1000;
+                ul{
+                    width: 74px;
+                    position: absolute;
+                    z-index: 1;
+                    left: 3px;
+                    top: 3px;
+                    height: 29px;
+                    border-right: 1px solid #e5e5e5;
+                    border-left: 1px solid #f5f5f5;
+                    background-color: #f4f4f4;
+                    li{
+                        display: none;
+                        width: 100%;
+                        background-color: #f4f4f4;
+                        text-align: center;
+                        line-height: 29px;
+                    }
+                    .selected{
+                        display:block
+                    }
+                }
+                i{
+                    line-height: 0;
+                    border-width: 4px;
+                    border-color: #666 transparent transparent;
+                    border-style: solid dashed dashed;
+                    height: 0;
+                    position: absolute;
+                    top: 16px;
+                    font-size: 0;
+                    left: 60px;
+                    z-index: 10;
+                }
+            }
+            .search-button{
+                position: relative;
+                z-index: 1;
+                float: right;
+                background: #fff;
+                button{
+                    height: 35px;
+                    width: 93px;
+                    cursor: pointer;
+                    border: 0;
+                    font-size: 18px;
+                    text-indent: -999em;
+                    background: url(../img/jlt3.png) no-repeat 0 -204px;
+                }
+            }
+            .field{
+                height: 35px;
+                background: #f50;
+                position: relative;
+                overflow: hidden;
+                .search-combobox{
+                    margin-left: 79px;
+                    height: 29px;
+                    margin-right: 0;
+                    margin-top: 3px;
+                    background: #fff;
+                    font-size: 12px;
+                    input{
+                        margin-left: 0;
+                        text-indent: 10px;
+                        width: 100%;
+                        font-size: 14px;
+                        border: 0 none;
+                        border-top: 1px solid #f5f5f5;
+                        z-index: 2;
+                        height: 29px;
+                        line-height: 29px;
+                        vertical-align: middle;
+                        background-color: #fff;
+                        color: #000;
+
+                    }
+                }
+            }
+        }
+        .cart{
+            min-height: 400px;
+            .filter-bar{
+                overflow: hidden;
+                font-size: 12px;
+                position: relative;
+                .cartswitch{
+                    overflow: hidden;
+                    height: 33px;
+                    &>li:nth-child(1){
+                        a{
+
+                            em{
+                                color: #f40;
+                            }
+                        }
+                    }
+                    .btn-switch-cart{
+                        float: left;
+                        font-weight: 700;
+                        font-size: 16px;
+                        height: 16px;
+                        line-height: 1.1;
+                        font-family: 'Hiragino Sans GB','Lantinghei SC','Microsoft Yahei',SimSun;
+                        text-align: center;
+                        padding: 0 0 15px 0;
+                        cursor: pointer;
+                        margin-left: -1px;
+                        a{
+                            padding-left: 15px;
+                            text-decoration: none;
+                            color: #3c3c3c;
+                            
+                            em{
+                                color: #3c3c3c;
+                                font-weight: 700;
+                            }
+                            .number{
+                                color: #f40;
+                                font-size: 14px;
+                                margin: 0 30px 0 5px;
+                                font-weight: 400;
+                            }
+                            .allnumber{
+                                color: #f40;
+                                font-size: 14px;
+                                margin: 0 30px 0 5px;
+                                font-weight: 400;
+                            }
+                            .pipe{
+                                width: 1px;
+                                height: 12px;
+                                display: inline-block;
+                                background: #e8e8e8;
+                            }
+                        }
+
+                    }
+                    
+                }
+                .cart-num{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 25px;
+                    line-height: 25px;
+                    strong{
+                        font-family: Arial,Verdana;
+                        font-weight: 700;
+                        margin-right: 5px;
+                        color: #f40;
+                        em{
+                            font-family: Verdana,Arial;
+                            padding-left: 2px;
+                            font-weight: 700;
+                        }
+                    }
+                    a{
+                        display: inline-block;
+                        background: #aaa;
+                        color: #fff;
+                        cursor: not-allowed;
+                        width: 55px;
+                        text-align: center;
+                    }
+                    .submit-btn{
+                        display: inline-block;
+                        width: 55px;
+                        border-radius: 2px;
+                        text-align: center;
+                        background: #f40;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .cart-main{
+                border-top:2px solid  #aaa;
+                min-height: 210px;
+                .cart-table{
+                    overflow: hidden;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #3c3c3c;
+                    .td-inner{padding: 0 0 0 10px;}
+                    .th{
+                        float: left;
+                    }
+                    .th-chk{
+                        font-size: 12px;
+                        text-align: left;
+                        position: relative;
+                        height: 50px;
+                        width: 50px;
+                        .select-all{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 80px;
+                            cursor: pointer;
+                            .cart-checkbox{
+                                margin: -1px 0 0 15px;
+                                position: relative;
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                overflow: hidden;
+                                line-height: 18px;
+                                input{
+                                    position: absolute;
+                                    z-index: 0;
+                                    left: -20px;
+                                    top: -20px;
+                                }
+                                label{
+                                    position: relative;
+                                    z-index: 1;
+                                    float: left;
+                                    width: 15px;
+                                    height: 15px;
+                                    top:2px;
+                                    left:1px;
+                                    line-height: 200em;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                    background: url(../img/jlt4.png) no-repeat ;
+                                    background-position: 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .th-item{
+                        width: 342px;
+                        padding-left: 91px;
+                        .td-inner{
+                            padding: 0 0 0 10px;
+                        }
+                    }
+                    .th-info{
+                        width: 180px;
+                        // padding-right: 40px;
+                        .td-inner{
+                            padding: 0 0 0 10px;
+                        }
+                    }
+                    .th-price{
+                        width: 130px;
+                    }
+                    .th-amount{
+                        width: 120px;
+                    }
+                    .th-sum{
+                        width: 140px;
+                    }
+                    .td-op{
+                        width: 119px;
+                        padding: 0 0 0 30px;
+                    }
+                }
+                .order{
+                    
+                    margin-bottom: 15px;
+                    .item-list{
+                        position: relative;
+                        background: #fcfcfc;
+                        border: 1px solid #ccc;
+                        &>ul{
+                            .td{
+                                float: left;
+                                min-height: 119px;
+                                .td-inner{
+                                    padding-top: 20px;
+                                }
+                            }
+                            .td-chk{
+                                position: relative;
+                                overflow: hidden;
+                                width: 50px;
+                                .cart-checkbox{
+                                    margin: 0 10px 0 0;
+                                    float: right;
+                                    position: relative;
+                                    display: inline-block;
+                                    width: 15px;
+                                    height: 15px;
+                                    overflow: hidden;
+                                    input{
+                                        position: absolute;
+                                        z-index: 0;
+                                        left: -20px;
+                                        top: -20px;
+                                    }
+                                    label{
+                                        position: relative;
+                                        z-index: 1;
+                                        float: left;
+                                        width: 15px;
+                                        height: 15px;
+                                        background-position: 0 0;
+                                        line-height: 200em;
+                                        overflow: hidden;
+                                        cursor: pointer;
+                                        background: url(../img/jlt4.png) no-repeat ;
+                                    }
+                                }
+                            }
+                            .td-item{
+                                width: 342px;
+                                .item-pic{
+                                    background: #fff;
+                                    width: 80px;
+                                    height: 80px;
+                                    border: 1px solid #eee;
+                                    float: left;
+                                    overflow: hidden;
+                                    a{
+                                        display: table-cell;
+                                        width: 80px;
+                                        height: 80px;
+                                        vertical-align: middle;
+                                        text-align: center;
+                                        img{
+                                            max-height: 80px;
+                                            max-width: 80px;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                }
+                                .item-info{
+                                    margin: -3px 0 0 91px;
+                                    padding-right: 25px;
+                                    .item-basic-info{
+                                        min-height: 40px;
+                                        a{
+                                                font-size: 12px;
+                                                display: block;
+                                                max-height: 36px;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                color: #3c3c3c;
+                                        }
+                                        a:hover{
+                                            color: #f60;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .item-other-info{
+                                        .promo-logos{
+                                            overflow: hidden;
+                                            min-height: 26px;
+                                        }
+                                    }
+                                    .item-icon-list{
+                                        margin-bottom: 3px;
+                                        span{
+                                            display: inline-block;
+                                            margin-right: 5px;
+                                            margin-bottom: 5px;
+                                        }
+                                        .item-icon-1{
+                                            display: inline-block;
+                                            margin-right: 5px;
+                                            margin-bottom: 5px;
+                                        }
+                                        .item-icon-2{
+                                            display: inline-block;
+                                            margin-right: 5px;
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                            .td-info{
+                                float: left;
+                                min-height: 119px;
+                                overflow: hidden;
+                                width: 212px;
+                                padding-right: 40px;
+                            }
+                            .td-price{
+                                color: #9c9c9c;
+                                width: 130px;
+                                .td-inner{
+                                    .price-content{
+                                        color: #9c9c9c;
+                                        padding: 8px 0 0 10px;
+                                        line-height: 1;
+                                        width: 74px;
+                                        background: #f5f5f5;
+                                        .price-line{
+                                            padding: 0 0 4px 0;
+                                            font-family: Verdana,Tahoma,arial;
+                                            .pre-discount{
+                                                color: #9c9c9c;
+                                                text-decoration: line-through;
+                                                font-family: Verdana,Tahoma,arial;
+                                            }
+                                            .pre-now{
+                                                color: #3c3c3c;
+                                                font-weight: 700;
+                                                font-family: Verdana,Tahoma,arial;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .td-amount{
+                                width: 120px;
+                                .td-inner{
+                                    .item-amount{
+                                        height: 25px;
+                                        overflow: hidden;
+                                        position: relative;
+                                        z-index: 1;
+                                        width: 77px;
+                                        
+                                        a{
+                                            display: block;
+                                            height: 23px;
+                                            width: 17px;
+                                            border: 1px solid #e5e5e5;
+                                            background: #f0f0f0;
+                                            text-align: center;
+                                            line-height: 23px;
+                                            color: #444;
+                                            position: absolute;
+                                            top: 0;
+                                        }
+                                        .tallydown{
+                                            // color: #e5e5e5;
+                                            border-left-color: transparent;
+                                            left: 0;
+                                        }
+                                        .plusone{
+                                            // color: #e5e5e5;
+                                            border-right-color: transparent;
+                                            right: 0;
+                                        }
+                                        .text-amount{
+                                            width: 39px;
+                                            height: 15px;
+                                            line-height: 15px;
+                                            border: 1px solid #aaa;
+                                            color: #343434;
+                                            text-align: center;
+                                            padding: 4px 0;
+                                            background-color: #fff;
+                                            background-position: -75px -375px;
+                                            position: absolute;
+                                            z-index: 2;
+                                            left: 18px;
+                                            top: 0;
+                                            float: left;
+                                        }
+                                        .plusone{
+                                            border-left-color: transparent;
+                                            right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .td-sum{
+                                color: #f40;
+                                font-weight: 700;
+                                width: 140px;
+                                padding-left:15px; 
+                                em{
+                                    font-family: Verdana,Tahoma,arial;
+                                    color: #f40;
+                                    font-weight: 700;
+                                }
+                            }
+                            .td-op{
+                               
+                                padding: 0 0 0 12px;
+                                .td-inner{
+                                    a{
+                                        display: block;
+                                        padding-bottom: 3px;
+                                        color: #3c3c3c;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .float-bar-holder{
+                    position: relative;
+                    height: 50px;
+                    .float-bar-wrapper{
+                        width: 1190px;
+                        overflow: hidden;
+                        background: #e5e5e5;
+                        .select-all{
+                            float: left;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            padding-left: 5px;
+                            cursor: pointer;
+                            .cart-checkbox{
+                                vertical-align: middle;
+                                margin-top: -2px;
+                                position: relative;
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                overflow: hidden;
+                                input{
+                                    position: absolute;
+                                    z-index: 0;
+                                    left: -20px;
+                                    top: -20px;
+                                }
+                                label{
+                                    position: relative;
+                                    z-index: 1;
+                                    float: left;
+                                    width: 15px;
+                                    height: 15px;
+                                    top:2px;
+                                    left:1px;
+                                    line-height: 200em;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                    background: url(../img/jlt4.png) no-repeat ;
+                                    background-position: 0 0;
+                                }
+                            }
+                            
+                        }
+                        .operation{
+                            float: left;
+                            line-height: 50px;
+                            height: 50px;
+                            a{
+                                margin-left: 25px;
+                                float: left;
+                                color: #3c3c3c;
+                            }
+                        }
+                        .float-bar-right{
+                            float: right;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            z-index: 4;
+                            padding-left: 20px;
+                            background: #e5e5e5;
+                            .amount-sum{
+                                cursor: pointer;
+                                height: 48px;
+                                color: #3c3c3c;
+                                float: left;
+                                span{
+                                    float: left;
+                                    line-height: 48px;
+                                }
+                                em{
+                                    line-height: 48px;
+                                    float: left;
+                                    color: #f40;
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    font-family: arial;
+                                    line-height: 50px;
+                                    padding: 0 5px;
+                                }
+                            }
+                            .price-sum{
+                                height: 48px;
+                                color: #3c3c3c;
+                                float: left;
+                                margin-left: 20px;
+                                &>span{
+                                    float: left;
+                                    line-height: 48px;
+                                }
+                                strong{
+                                    color: #f40;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 48px;
+                                    font-family: Arial;
+                                    vertical-align: middle;
+                                    .price{
+                                        font-weight: 700;
+                                        font-size: 22px;
+                                        padding: 0 3px;
+                                        line-height: 48px;
+                                        font-family: Arial;
+                                    }
+                                }
+                            }
+                            .btn-area{
+                                float: left;
+                                
+                                a{
+                                    background: #B0B0B0;
+                                    color: #fff;
+                                    border-left: 1px solid #e7e7e7;
+                                    display: inline-block;
+                                    cursor: not-allowed;
+                                    text-decoration: none;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    width: 119px;
+                                    font-size: 20px;
+                                    text-align: center;
+                                }
+                                .submit-btn{
+                                    border-radius: 2px;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    background: #f40;
+                                    text-align: center;
+                                    font-family: 'Lantinghei SC','Microsoft Yahei';
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+     }
+ }
+ 
+ //shopcar
+
+ // footer
+footer{
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 125px;
+    margin-top: 20px;
+    padding-bottom: 9px;
+    background-color: #fff;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+    .container{
+        width: 1190px;
+        margin: 0 auto;
+        .footer-hd{
+            padding-top: 7px;
+            p{
+                padding-bottom: 8px;
+                overflow: hidden;
+                margin-bottom: 8px;
+                line-height: 27px;
+                border-bottom: 1px solid #ddd;
+                span{
+                    margin: 0 4px;
+                    color: #9c9c9c;
+                    a{
+                        white-space: nowrap;
+                        color: #6c6c6c;
+                        text-decoration: none;
+                        &:hover{
+                            color:#f40
+                        }
+                    }
+                }
+                b{
+                    margin: 0 2px;
+                    font-weight: 400;
+                    color: #ddd;
+                }
+            }
+        }
+        .footer-bd{
+            p{
+                padding-bottom: 8px;
+                overflow: hidden;
+                white-space: nowrap;
+                span{
+                    color: #9c9c9c;
+                    margin: 0 4px;
+                    a{
+                        white-space: nowrap;
+                        color: #6c6c6c;
+                        text-decoration: none;
+                        .zg-bg{
+                            display: inline-block;
+                            
+                            background: url(../img/jfjlt.jpg) 0 0 no-repeat;
+                            background-position: -861px 0px;
+                            width: 20px;
+                            height: 20px;
+                        }   
+                    }
+                    a:hover{
+                        color:#f40
+                    }
+                }
+                b{
+                    margin: 0 1px;
+                    font-weight: 400;
+                    color: #ddd;
+                }
+                em{
+                    margin-left: 30px;
+                    font-style: normal;
+                    color: #9c9c9c;
+                }
+            }
+        }
+        
+    }
+}
+
+.order-content{
+    margin-bottom: 10px;
+}

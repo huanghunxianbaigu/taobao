@@ -1,0 +1,186 @@
+.hotsale {
+  margin-top: 10px;
+}
+.hotsale .container .sale {
+  background-color: #FFF;
+  width: 1190px;
+  clear: both;
+  min-height: 962px;
+  overflow: hidden;
+}
+.hotsale .container .sale h3 {
+  position: relative;
+  height: 22px;
+  line-height: 22px;
+  margin: 17px 18px;
+  font-size: 20px;
+  color: #ff242d;
+  font-weight: bold;
+}
+.hotsale .container .sale h3::before {
+  content: "";
+  position: relative;
+  float: left;
+  top: 2px;
+  width: 4px;
+  height: 16px;
+  background: #ff242d;
+  background: linear-gradient(to bottom, #ff7436, #ff0000);
+  margin-right: 7px;
+}
+.hotsale .container .sale .sale-hd {
+  padding: 0 0 13px 18px;
+  overflow: hidden;
+  position: relative;
+}
+.hotsale .container .sale .sale-hd .sale-p4p {
+  float: left;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  max-width: 1110px;
+}
+.hotsale .container .sale .sale-hd .sale-p4p a {
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  color: #999;
+  height: 14px;
+  line-height: 14px;
+  font-size: 12px;
+}
+.hotsale .container .sale .sale-hd img {
+  width: 32px;
+  height: 15px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  border: 0;
+}
+.hotsale .container .sale .hot-main {
+  height: 703px;
+  margin-left: 1px;
+}
+.hotsale .container .sale .hot-main > li:hover {
+  border: 1px solid #ff5000;
+  z-index: 1;
+}
+.hotsale .container .sale .hot-main li {
+  float: left;
+  width: 197px;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #f4f4f4;
+  margin: -1px 0 0 -1px;
+}
+.hotsale .container .sale .hot-main li .image {
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0;
+  position: relative;
+}
+.hotsale .container .sale .hot-main li .image img {
+  border: 0;
+  width: 197px;
+  height: 197px;
+}
+.hotsale .container .sale .hot-main li .line-1 {
+  display: block;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+.hotsale .container .sale .hot-main li .line-1 img {
+  height: 16px;
+  position: relative;
+  width: 28px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.hotsale .container .sale .hot-main li .line-2 {
+  height: 18px;
+  margin-bottom: 17px;
+}
+.hotsale .container .sale .hot-main li .line-2 a:nth-child(1) {
+  color: #999;
+  float: left;
+  margin-right: 10px;
+}
+.hotsale .container .sale .hot-main li .line-2 a:nth-child(1) em {
+  font-family: arial;
+  color: #999;
+}
+.hotsale .container .sale .hot-main li .line-2 a:nth-child(2) {
+  color: #999;
+  float: left;
+  margin-right: 10px;
+}
+.hotsale .container .sale .hot-main li .line-2 a:nth-child(2) em {
+  font-family: arial;
+  color: #999;
+}
+.hotsale .container .sale .hot-main li .line-3 {
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+}
+.hotsale .container .sale .hot-main li .line-3 a:nth-child(1) {
+  color: #ff5000;
+  margin-right: 3px;
+}
+.hotsale .container .sale .hot-main li .line-3 a:nth-child(1) em {
+  font-size: 22px;
+  margin-left: 2px;
+}
+.hotsale .container .sale .hot-main li .line-3 a:nth-child(2) {
+  color: #999;
+  font-family: arial;
+  text-decoration: line-through;
+}
+.hotsale .container .sale .hot-main li .line-3 a:nth-child(3) {
+  color: #999;
+  float: right;
+  display: block;
+  margin-top: 3px;
+}
+.hotsale .container .sale .hot-main li .line-3 a:nth-child(3) em {
+  color: #999;
+  font-family: arial;
+}
+.hotsale .container .sale .hot-main .item-1,
+.hotsale .container .sale .hot-main .item-6 {
+  border-left: 1px solid #fff;
+}
+.hotsale .container .sale .hot-main .item-3,
+.hotsale .container .sale .hot-main .item-8 {
+  width: 196px;
+}
+.hotsale .container .sale .hot-main .item-5,
+.hotsale .container .sale .hot-main .item-10 {
+  border-right: 1px solid #fff;
+}
+.hotsale .container .sale .hot-bot {
+  margin-left: 18px;
+  height: 170px;
+}
+.hotsale .container .sale .hot-bot li {
+  float: left;
+  width: 375px;
+  position: relative;
+  margin: 20px 11px 0 2px;
+  font-size: 0;
+}
+.hotsale .container .sale .hot-bot li a {
+  width: 100%;
+}
+.hotsale .container .sale .hot-bot li:hover {
+  margin: 18px 9px 0 0;
+  border: 2px solid #ff5000;
+}

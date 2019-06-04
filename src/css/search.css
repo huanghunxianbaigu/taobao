@@ -1,0 +1,262 @@
+/* search */
+
+.search {
+    background-color: #FFF;
+    padding-top: 24px;
+    height: 97px;
+}
+
+.search .container {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+
+/* logo */
+
+.search .logo {
+    width: 190px;
+    height: 80px;
+    float: left;
+    margin-top: 8px;
+}
+
+.logo h1 a {
+    display: block;
+    margin-left: 22px;
+    padding-top: 58px;
+    width: 142px;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../img/logo.png) no-repeat;
+}
+
+
+/* search-box */
+
+.search-box {
+    margin-left: 258px;
+    margin-right: 302px;
+}
+
+
+/* search-box-top */
+
+.search-box-top {
+    position: relative;
+}
+
+
+/* search-ul */
+
+.search-ul {
+    position: relative;
+    height: 22px;
+    margin-left: 17px;
+}
+
+.search-ul .search-ul-show {
+    color: #FFF;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    background-repeat: repeat-x;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.search-ul li {
+    color: #F40;
+    text-align: center;
+    float: left;
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.search-ul .search-ul-hidn:hover {
+    background-color: #FFEEE5;
+    color: #FF5400;
+}
+
+
+/* search-input */
+
+.search-input {
+    position: relative;
+}
+
+.search-input button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 74px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #FF4200;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    background-repeat: repeat-x;
+}
+
+
+/* search-comobox */
+
+.search-comobox {
+    margin-right: 74px;
+    border: 2px solid #ff5000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    overflow: hidden;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+
+/* 搜索图标 */
+
+.search-comobox i {
+    z-index: 2;
+    font-size: 16px;
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    color: #666;
+}
+
+
+/* 输入框 */
+
+.search-comobox .comobox {
+    box-sizing: content-box;
+    padding: 6px 0;
+    text-indent: 10px;
+    height: 24px;
+    line-height: 24px;
+    width: 472px;
+    border: none;
+    outline: 0;
+    background: #FFF;
+    overflow-y: visible;
+    font-size: 100%;
+    position: relative;
+}
+
+
+/* 照相机 */
+
+.search-comobox b {
+    position: absolute;
+    top: 2px;
+    right: 90px;
+    height: 36px;
+    font-size: 24px;
+    color: #999;
+}
+
+
+/* search-box-bot */
+
+.search-box-bot {
+    box-sizing: content-box;
+    position: relative;
+    padding: 5px 41px 0 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+.search-box-bot div {
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.search-box-bot a {
+    color: #3C3C3C;
+    text-decoration: none;
+}
+
+.search-box-bot a:nth-child(1),
+.search-box-bot a:nth-child(4) {
+    color: #F40;
+}
+
+.search-box-bot a:hover {
+    color: #F40;
+    text-decoration: none;
+}
+
+
+/* 二维码 */
+
+.erwei {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    background-color: #FFF;
+}
+
+.erwei a {
+    text-decoration: none;
+}
+
+.erwei a:nth-child(1) {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 74px;
+    height: 88px;
+    color: #666;
+    border: 1px solid #eee;
+    background-color: #FFF;
+    box-sizing: content-box;
+}
+
+.erwei a:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #eee;
+    box-sizing: content-box;
+}
+
+.erwei i {
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #DDD;
+}
+
+.erwei span {
+    line-height: 20px;
+    margin: 4px auto 0;
+    width: 78px;
+    color: #ff5000!important;
+}
+
+.erwei img {
+    display: block;
+    margin-left: 6px;
+    width: 62px;
+    height: 62px;
+}

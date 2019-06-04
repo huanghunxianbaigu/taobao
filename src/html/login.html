@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../iconfont/font/iconfont.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js "></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js "></script>
+    <![endif]-->
+    <!-- <script src="../../node_modules/jquery/dist/jquery.js"></script> -->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script>
+        $(function() {
+
+
+            $('#submit').on('click', function() {
+
+                if ($('#username').val().length == 0) {
+                    if ($('#password').val().length == 0) {
+                        $('.login-msg').css({
+                            'display': 'block'
+                        });
+                        console.log($('.login-msg'));
+
+                        $('#login-msg').html();
+                        $('#login-msg').html("请输入用户名和密码");
+                    } else {
+                        $('.login-msg').css({
+                            'display': 'block'
+                        });
+                        $('#login-msg').html();
+                        $('#login-msg').html("请输入用户名");
+                    }
+                } else {
+                    if ($('#password').val().length == 0) {
+                        $('.login-msg').css({
+                            'display': 'block'
+                        });
+                        $('#login-msg').html();
+                        $('#login-msg').html("请输入密码");
+                    } else {
+                        $.ajax({
+                            type: "get",
+                            url: "../lib/login.php",
+                            data: {
+                                username: $('#username').val(),
+                                password: $('#password').val()
+                            },
+                            dataType: "json",
+                            success: function(response) {
+                                console.log(response)
+                                if (response.msg == "登陆成功") {
+                                    cookie.remove('usename');
+                                    cookie.set('usename', $('#username').val());
+                                    location.href = "../index.html";
+                                } else {
+                                    // location.reload()
+                                    $('.login-msg').css({
+                                        'display': 'block'
+                                    });
+                                    $('#login-msg').html();
+                                    $('#login-msg').html("你输入的密码和账户名不匹配，是否忘记密码或忘记会员名");
+                                    username: $('#username').val();
+                                    password: $('#password').val();
+                                }
+
+                            }
+                        })
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!-- page -->
+    <div id="page" class="clearfix">
+        <!-- header -->
+        <div class="header clearfix">
+            <!-- logo -->
+            <div class="logo">
+                <h1>
+                    <a href="../index.html">
+                        <img src="../img/taobaologo.png" alt="">
+                    </a>
+                </h1>
+                <div class="login-msg1">
+                    <p>
+                        为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+                    </p>
+                </div>
+                <a href="#">
+                    <i class="iconfont">&#xe743;</i> "登录页面"改进建议
+                </a>
+            </div>
+            <!-- 登录框主体 -->
+            <div class="content clearfix">
+                <!-- bg -->
+                <div class="login-newbg"></div>
+                <!-- 手机淘宝 -->
+                <div class="login-adlink">
+                    <a href="../index.html"></a>
+                </div>
+                <!-- 登录框 -->
+                <div class="content-layouy">
+                    <div class="login-box-wrap">
+                        <div class="login-box">
+                            <!-- 二维码/密码登录切换 -->
+                            <div class="login-box-hd">
+                                <div class="login-switch">
+                                    <img src="../img/register/erwei.png" alt="" class="show">
+                                    <img src="../img/register/diannao.png" alt="" class="hide">
+                                </div>
+                                <div class="login-tip">
+                                    <div class="poptip">
+                                        <div class="poptip-arrow">
+                                            <em></em>
+                                            <span></span>
+                                        </div>
+                                        <div class="poptip-content">
+                                            <i class="iconfont">&#xe7a0;</i> 扫码登录更安全
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 输入框 -->
+                            <div class="login-box-bd">
+                                <div class="log-in">
+                                    <div class="log-title">密码登录</div>
+                                    <!-- 账号 -->
+                                    <div class="field username-field">
+                                        <label for="username">
+                                                <i class="iconfont">&#xe7f9;</i>
+                                            </label>
+                                        <input type="text" placeholder="会员名/邮箱/手机号" name="" id="username">
+                                    </div>
+                                    <!-- 密码 -->
+                                    <div class="field pwd-field">
+                                        <label for="password">
+                                                <i class="iconfont">&#xe81f;</i>
+                                        </label>
+                                        <span>
+                                            <input type="text" name="password"id="password">
+                                        </span>
+                                    </div>
+                                    <!-- 提交 -->
+                                    <div class="submit">
+                                        <input type="submit" id="submit">
+                                    </div>
+                                    <!-- 微博 支付宝 -->
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="iconfont wb">&#xe66b;</i> 微博登录
+                                            </a>
+                                            <a href="#">
+                                                <i class="iconfont zfb">&#xe665;</i>支付宝登录
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- 忘记密码 -->
+                                    <div class="login-links">
+                                        <a href="#">忘记密码</a>
+                                        <a href="#">忘记会员名</a>
+                                        <a href="./register.html">免费注册</a>
+                                    </div>
+                                    <div class="login-msg">
+                                        <i class="iconfont">&#xe803;</i>
+                                        <span id="login-msg">请输入用户名和密码</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-hd">
+            <p class="clearfix">
+                <a href="#">阿里巴巴集团</a>
+                <b>|</b>
+                <a href="#">阿里巴巴国际站</a>
+                <b>|</b>
+                <a href="#">阿里巴巴中国站</a>
+                <b>|</b>
+                <a href="#">全球速卖通</a>
+                <b>|</b>
+                <a href="#">淘宝网</a>
+                <b>|</b>
+                <a href="#">天猫</a>
+                <b>|</b>
+                <a href="#">聚划算</a>
+                <b>|</b>
+                <a href="#">一淘</a>
+                <b>|</b>
+                <a href="#">阿里妈妈</a>
+                <b>|</b>
+                <a href="#">飞猪</a>
+                <b>|</b>
+                <a href="#">虾米</a>
+                <b>|</b>
+                <a href="#">阿里云计算</a>
+                <b>|</b>
+                <a href="#">云OS</a>
+                <b>|</b>
+                <a href="#">万网</a>
+                <b>|</b>
+                <a href="#">支付宝</a>
+                <b>|</b>
+                <a href="#">来往</a>
+            </p>
+        </div>
+        <div class="footer-bd">
+            <p>
+                <span>
+                            <a href="./about.html">关于淘宝</a>
+                        </span>
+                <span>
+                            <a href="#">合作伙伴</a>
+                        </span>
+                <span>
+                            <a href="#">营销中心</a>
+                        </span>
+                <span>
+                            <a href="#">廉正举报</a>
+                        </span>
+                <span>
+                            <a href="#">联系客服</a>
+                        </span>
+                <span>
+                            <a href="#">开放平台</a>
+                        </span>
+                <span>
+                            <a href="#">诚征英才</a>
+                        </span>
+                <span>
+                            <a href="#">联系我们</a>
+                        </span>
+                <span>
+                            <a href="#">网站地图</a>
+                        </span>
+                <span>
+                            <a href="#">法律声明</a>
+                        </span>
+                <span>
+                            <a href="#">隐私权政策</a>
+                        </span>
+                <em>© 2019 Taobao.com 版权所有</em>
+            </p>
+            <p>
+                <span>网络文化经营许可证：浙网文[2016]0132-032号</span>
+                <b>|</b>
+                <span>增值电信业务经营许可证：浙B2-20080224-1</span>
+                <b>|</b>
+                <span>信息网络传播视听节目许可证：1109364号</span>
+            </p>
+        </div>
+        <div class="footer-ft">
+            <p>
+                <a href="#"><img src="../img/jingcha.gif" alt=""></a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

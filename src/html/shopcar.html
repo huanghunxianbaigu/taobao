@@ -461,7 +461,8 @@
             <!-- header -->
             <div class="header">
                 <h1>
-                    <img src="../img/taobaologo.png" alt="">
+                    <a href="../index.html"><img src="../img/taobaologo.png" alt=""></a>
+
                 </h1>
                 <h2>购物车</h2>
             </div>
@@ -1094,6 +1095,12 @@
 
                         // 全部删除
                         $('.allremove').on('click', function() {
+                            payment()
+                        })
+
+
+                        // 删除  结算
+                        function payment() {
                             var removeId = document.querySelectorAll('.order input[data-pass="true"]');
                             for (var k = 0; k < removeId.length; k++) {
 
@@ -1113,8 +1120,7 @@
                                 'background-position': '0 0'
                             });
                             total();
-
-                        })
+                        }
 
                         // 删除
                         $('.remove').on('click', function() {
@@ -1188,6 +1194,11 @@
                             $(this).parent().parent().parent().parent().siblings('.td-sum').find('.itemlottery').html(itemPre)
 
                         }
+
+                        // 结算
+                        $('.submit').on('click', function() {
+                            payment()
+                        })
                     }
                 });
             }
@@ -1195,4 +1206,4 @@
     </script>
 </body>
 
-</html>j
+</html>

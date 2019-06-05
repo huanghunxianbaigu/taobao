@@ -73,6 +73,7 @@
                     this.dataset.pass = "true"
                     password.classList.add('green');
                     password.classList.remove('red');
+
                 } else {
                     password.innerHTML = "*密码必须至少6位"
                     this.dataset.pass = "false"
@@ -96,18 +97,30 @@
 
 
             $('.submit').on('click', function() {
-                $('.content2').css("display", "block");
-                var downNumber = setInterval(() => {
-                    var countDownNumber = Number($('.count-down').text()) - 1;
-                    $('.count-down').text(countDownNumber);
-                }, 1000);
-                setTimeout(() => {
-                    clearInterval(downNumber)
-                    location.href = "../html/login.html";
-                }, 5000);
+                $.ajax({
+                    type: "get",
+                    url: "../lib/save.php",
+                    data: {
+                        username: $('#username').val(),
+                        password: $('#password').val()
+                    },
+                    dataType: "json",
+                    success: function(response) {
+                        if (response.msg == '注册成功') {
+                            $('.content2').css("display", "block");
+                            var downNumber = setInterval(() => {
+                                var countDownNumber = Number($('.count-down').text()) - 1;
+                                $('.count-down').text(countDownNumber);
+                            }, 1000);
+                            setTimeout(() => {
+                                clearInterval(downNumber)
+                                location.href = "../html/login.html";
+                            }, 5000);
 
+                        }
+                    }
+                });
             })
-
         })
     </script>
 
